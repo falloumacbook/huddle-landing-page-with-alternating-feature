@@ -1,0 +1,297 @@
+/** @format */
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+	background-image: url(images/bg-hero-desktop.svg);
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: top 50, left 50;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.header img {
+	margin-left: 6%;
+}
+
+.header button {
+	background-color: white;
+	width: 130px;
+	height: 30px;
+	text-transform: capitalize;
+	padding: 5px;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+	margin-right: 5%;
+}
+.community {
+	height: 350px;
+	display: flex;
+	justify-content: space-around;
+}
+.community {
+	margin-top: 5%;
+}
+.community img {
+	width: 500px;
+	height: 350px;
+}
+
+.community .text {
+	margin-top: 4%;
+}
+.community h1,
+p {
+	margin-top: 20px;
+}
+
+.community button {
+	width: 180px;
+	height: 35px;
+	margin-top: 20px;
+	border-radius: 15px;
+	border: none;
+	text-transform: capitalize;
+	background-color: hsl(322, 100%, 66%);
+	cursor: pointer;
+	color: white;
+}
+
+.card {
+	border-radius: 10px;
+	height: 400px;
+	margin: 30px 50px;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	background-color: aliceblue;
+	font-size: 18px;
+}
+
+.card img {
+	width: 400px;
+	height: 300px;
+	margin: 50px 35px;
+}
+
+.details {
+	line-height: 1.5em;
+	margin: 10% 10%;
+}
+
+.details p {
+	color: rgb(48, 45, 45);
+}
+
+.box-container {
+	display: flex;
+	justify-content: space-around;
+}
+.box {
+	border-radius: 10px;
+	width: 600px;
+	height: 130px;
+	background-color: aliceblue;
+	margin-top: 0;
+}
+.box-container {
+	position: relative;
+	top: 60px;
+}
+
+.box h3 {
+	margin-top: 15px;
+	text-align: center;
+	padding: 5px;
+	text-transform: capitalize;
+}
+
+.box button {
+	border-radius: 15px;
+	border: 0;
+	color: white;
+	background-color: hsl(322, 100%, 66%);
+	width: 210px;
+	height: 40px;
+	margin-left: 31%;
+	margin-top: 3%;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.box button:hover {
+	background-color: hsl(322, 100%, 78%);
+}
+
+footer {
+	background-color: hsl(216, 53%, 9%);
+	height: 265px;
+	color: rgba(255, 249, 239, 0.705);
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 40vh;
+	background-color: hsl(216, 53%, 9%);
+}
+
+footer p {
+	position: relative;
+	text-align: justify;
+	margin-left: 10%;
+	margin-bottom: 15%;
+}
+
+footer .logo2,
+.icon-location {
+	position: relative;
+	right: 20px;
+}
+.social {
+	display: block;
+}
+
+.about a,
+.contact a {
+	display: flex;
+	flex-direction: column;
+	text-transform: capitalize;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1.5rem;
+	color: white;
+}
+
+.contact a:hover {
+	color: hsl(176, 55%, 49%);
+}
+.about a:hover {
+	color: hsl(176, 55%, 49%);
+}
+.start {
+	width: 280px;
+}
+
+.icon-location {
+	width: 15px;
+	height: 15px;
+}
+
+.icon-email {
+	width: 20px;
+	height: 15px;
+}
+
+.icon-phone {
+	width: 20px;
+	height: 15px;
+}
+
+.media {
+	display: flex;
+}
+.fa-brands {
+	margin: 15px;
+	color: white;
+}
+.fa-brands:hover {
+	color: hsl(176, 55%, 49%);
+}
+
+.logo2 {
+	margin-top: 35%;
+}
+
+@media (max-width: 768px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+	.main {
+		height: 580px;
+	}
+	.community {
+		display: block;
+	}
+
+	.community .text {
+		text-align: center;
+		margin-bottom: 7%;
+		order: 2;
+	}
+	.community img {
+		width: 360px;
+		height: 280px;
+		order: 1;
+	}
+	.card {
+		border-radius: 10px;
+		height: 500px;
+		margin: 30px 50px;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card img {
+		order: 1;
+		width: 270px;
+		height: 170px;
+	}
+
+	.details {
+		order: 2;
+		text-align: center;
+	}
+	.about a,
+	.contact a {
+		margin-left: 10%;
+	}
+
+	footer {
+		height: 260px;
+	}
+	.box {
+		width: 300px;
+		height: 130px;
+	}
+	.box button {
+		width: 190px;
+		margin-left: 50px;
+	}
+
+	.footer-container {
+		display: block;
+	}
+	.social-media {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	.social {
+		margin-left: 40px;
+	}
+	.about,
+	.contact {
+		margin-top: 10px;
+	}
+	.logo2 {
+		margin-left: 50px;
+	}
+}
