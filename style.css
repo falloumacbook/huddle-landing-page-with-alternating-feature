@@ -133,6 +133,7 @@ p {
 
 .box button:hover {
 	background-color: hsl(322, 100%, 78%);
+	transition: all 0.3s ease-in-out;
 }
 
 footer {
@@ -178,9 +179,11 @@ footer .logo2,
 
 .contact a:hover {
 	color: hsl(176, 55%, 49%);
+	transition: all 0.3s ease-in-out;
 }
 .about a:hover {
 	color: hsl(176, 55%, 49%);
+	transition: all 0.3s ease-in-out;
 }
 .start {
 	width: 280px;
@@ -210,6 +213,7 @@ footer .logo2,
 }
 .fa-brands:hover {
 	color: hsl(176, 55%, 49%);
+	transition: all 0.3s ease-in-out;
 }
 
 .logo2 {
